@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>棉花草反盗版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <img src="logo.png" alt="Santa Cachucha Logo" class="logo-img" />
+            </div>
+            <ul class="nav__menu">
+                <li><a href="#" class="nav__link" data-section="antipiracy">ANTIPIRATERÍA</a></li>
+                <li><a href="#" class="nav__link" data-section="generator">CASTIGOS</a></li>
+                <li><a href="#" class="nav__link" data-section="certificate">CERTIFICADO</a></li>
+                <li><a href="#" class="nav__link" data-section="faq">FAQ</a></li>
+                <li><a href="#" class="nav__link" data-section="teresa">TERESA</a></li>
+                <li><a href="#" class="nav__link" data-section="settings">AJUSTES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main container">
+        <!-- Anti-piracy System Section -->
+        <section id="antipiracy" class="section section--active">
+            <h2 class="section__title">SISTEMA ANTIPIRATERÍA DE SANTA CACHUCHA</h2>
+            <div class="legal-text">
+                <h3>ADVERTENCIA LEGAL</h3>
+                <p>Por la presente, el Consejo Supremo de Ángeles de la Antipiratería informa que el uso de software pirata, como el videojuego "Santa Cachucha!" constituye una transgresión grave contra las leyes celestiales y terrestres desde el cielo hasta la tierra. Si estás viendo esto es porque nuestro sistema de ángeles expertos avanzado ha detectado actividad sospechosa en su dispositivo, como el acceso de un menor a un videojuego de clasificación +13. Se le pide amablemente a los padres que sean más responsables con el contenido al que acceden sus hijos, ya que se pueden encontrar con cosas no deseables en videojuegos que no fueron hechos para su edad, y hasta se advierte explícitamente que un menor de 12 años no debe jugar Santa Cachucha!</p>
+                
+                <h4>CONSECUENCIAS DIVINAS DE LA PIRATERÍA</h4>
+                <ul>
+                    <li>Pérdida inmediata del videojuego en todos tus dispositivos</li>
+                    <li>Inscripción permanente en el Libro Negro Angelical</li>
+                    <li>Activación automática del Sistema de Confesión Obligatoria</li>
+                    <li>Monitoreo constante por parte del Ángel Gluttony del Pan</li>
+                    <li>Supervisión directa del Ángel Vanity Solitario</li>
+                </ul>
+
+                <h4>PROTOCOLO DE CUMPLIMIENTO ANTI-NIÑOS</h4>
+                <p>Si ha utilizado software pirata, debe proceder inmediatamente a:</p>
+                <ol>
+                    <li>Apagar el celular o dispositivo infractor</li>
+                    <li>Reportar el software robado a las autoridades locales</li>
+                    <li>Completar el proceso de castigo sagrado (en el menú CASTIGOS)</li>
+                    <li>Obtener el Certificado de Redención (en el menú CERTIFICADO)</li>
+                </ol>
+
+                <div class="warning-box">
+                    <h4>⚠️ ADVERTENCIA FINAL</h4>
+                    <p>Si se niega a cumplir con este protocolo, su teléfono se activará automáticamente para realizar una llamada al CICPC (o su respectiva autoridad local). Estará obligado a recitar en voz alta el siguiente texto:</p>
+                    <div class="confession-text">
+                        "Confieso ante las autoridades terrestres que he cometido el crimen de piratería digital de Santa Cachucha!. Solicito ser enviado inmediatamente a prisión para purgar mis pecados contra la propiedad intelectual sagrada. Acepto todas las consecuencias legales de mis acciones."
+                    </div>
+                </div>
+
+                <p class="final-warning">No ignore esta advertencia, te estamos observando.</p>
+            </div>
+        </section>
+
+        <!-- Punishment Generator Section -->
+        <section id="generator" class="section">
+            <h2 class="section__title">CASTIGOS SAGRADOS</h2>
+            <div class="generator-container">
+                <p class="generator-intro">El Tribunal Celestial ha determinado que debido a sus graves crímenes de piratería, usted requiere un proceso de purificación. Presione el botón:</p>
+                <button class="btn btn--primary btn--lg" id="generatePunishment">   SAPEE ALAVERGA   </button>
+                <div class="punishment-result" id="punishmentResult"></div>
+                
+                <div class="evidence-gallery">
+                    <h3>Galería de Evidencia de Ángeles</h3>
+                    <div class="evidence-grid" id="evidenceGrid"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate Section -->
+        <section id="certificate" class="section">
+            <h2 class="section__title">OBTÉN TU CERTIFICADO DE REDENCIÓN AHORA!</h2>
+            <div class="shop-container">
+                <div class="product-card">
+                    <h3>Certificado de Redención Roja</h3>
+                    <p class="price">$6.66 USD</p>
+                    <p class="product-description">Documento oficial que certifica su arrepentimiento ante los tribunales celestiales del cielo de Santa Cachucha. Incluye sello angelical y firma del Ángel Supremo Cottongrass.</p>
+                    <button class="btn btn--primary" id="addToCart">AGREGAR AL CARRITO</button>
+                </div>
+                
+                <div class="cart-section" id="cartSection" style="display: none;">
+                    <h3>Carrito</h3>
+                    <div class="cart-item">
+                        <span>Certificado de Redención</span>
+                        <span>$6.66</span>
+                        <span>Tarifas locales</span>
+                        <span>$63.02</span>
+                        <span>Nada</span>
+                        <span>$0.01</span>
+                    </div>
+                    <div class="cart-total">
+                        <strong>Total: $69.69 USD</strong>
+                    </div>
+                    <button class="btn btn--primary" id="proceedCheckout">PROCEDER AL PAGO</button>
+                </div>
+
+                <div class="checkout-section" id="checkoutSection" style="display: none;">
+                    <h3>Información de Pago</h3>
+                    <form class="checkout-form">
+                        <div class="form-group">
+                            <label class="form-label">Banco Celestial</label>
+                            <select class="form-control" id="bankSelect">
+                                <option value="">Seleccione su banco</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Número de Cuenta (NO PONGAS UNA CUENTA REAL)</label>
+                            <input type="text" class="form-control" placeholder="0000-0000-0000-0000" maxlength="19">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Nombre del Titular</label>
+                            <input type="text" class="form-control" placeholder="Nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Código de Vanidad Celestial (CVC)</label>
+                            <input type="text" class="form-control" placeholder="000" maxlength="3">
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">COMPLETAR REDENCIÓN ($420.69)</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section">
+            <h2 class="section__title">PREGUNTAS FRECUENTES</h2>
+            <div class="faq-container" id="faqContainer"></div>
+        </section>
+
+        <!-- Teresa Section -->
+        <section id="teresa" class="section">
+            <h2 class="section__title">TERESA</h2>
+            <div class="teresa-content"></div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings" class="section">
+            <h2 class="section__title">AJUSTES DE SITIO WEB</h2>
+            <div class="settings-container">
+                <div class="setting-group">
+                    <h3>Apariencia y personalización</h3>
+                    <div class="theme-toggle">
+                        <label class="toggle-label">
+                            <input type="checkbox" id="themeToggle">
+                            <span class="toggle-slider"></span>
+                            <span class="toggle-text">Modo Oscuro</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="setting-group">
+                    <h3>Color de Acento</h3>
+                    <div class="color-picker">
+                        <button class="color-btn" data-color="red" style="background-color: #e74c3c;"></button>
+                        <button class="color-btn" data-color="orange" style="background-color: #f39c12;"></button>
+                        <button class="color-btn" data-color="yellow" style="background-color: #f1c40f;"></button>
+                        <button class="color-btn" data-color="green" style="background-color: #27ae60;"></button>
+                        <button class="color-btn" data-color="blue" style="background-color: #3498db;"></button>
+                        <button class="color-btn" data-color="purple" style="background-color: #9b59b6;"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Santa Cachucha! Todos los derechos reservados en el cielo y la tierra.</p>
+            <a href="https://invagrass.itch.io" target="_blank" class="fuck-you-btn">FUCK YOU</a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
